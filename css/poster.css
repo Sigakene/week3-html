@@ -101,13 +101,6 @@ html {
 }
 
 
-
-
-
-
-
-
-
 .movie-poster-container:hover {
     transform: scale(1.1);
 }
@@ -195,6 +188,61 @@ html {
 @keyframes fade-in {
     100% {opacity: 1;}
 }
+
+
+.container {
+    width: 75%;
+    text-align: center;
+    margin: 3rem auto;
+}
+
+.container {
+    max-width: 500px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.carousel img {
+    width: 100%;
+}
+
+.carousel .carousel_item,
+.carousel .carousel_item--hidden {
+    display: none;
+}
+
+.carousel .carousel_item--visible {
+    display: block;
+    animation: fadeIn .6s;
+}
+
+@keyframes fadeIn {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+}
+
+.carousel .carousel_actions {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.carousel .carousel_actions button{
+    border-radius: 50px;
+    cursor: pointer;
+    font-weight: bold;
+    height: 50px;
+    width: 50px;
+    border: 0;
+    background-color: rgba(255, 228, 196, 0.578);
+    font-size: 2rem;
+    color: white;
+    margin: 0.5rem;
+}
+
 
 footer {
     margin-top: 0.5rem;
